@@ -1,0 +1,18 @@
+# Logitech F710 (f710) and Attack3 (atk3) for diffdrive /cmd_vel
+# Mode off (Black, Input Mode X
+
+teleop_twist_joy_node: 
+  ros__parameters:
+    axis_linear:
+      x: 1
+  
+    scale_linear_turbo:
+      x: 0.7
+
+    axis_angular: #Left/Right
+      yaw: 0
+    scale_angular:
+      yaw:0.4
+
+    enable_button: 4 # Button 4 LB Enable Velocity
+    enable_turbo_button: 5 # Button X Thumb Button

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+  <!-- Added to mockbotc1.description and called by mockbotc1_sensors.urdf.xacro -->
+  <!-- Based on shell_link & joint declaration in /standard/turtlebot4_urdf.xacro -->
+<robot name="Sensors" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:property name="shelf_zoff" value="${15.085*cm2m}" />
+  <xacro:property name="shelf_radius" value="${7.5*cm2m}" />
+  <xacro:property name="shelf_length" value="${.15*cm2m}" />
+
+    <!-- Sensor Shelf Definition -->
+  <link name="sensors_shelf_link">
+    <visual>
+      <geometry>
+        <cylinder length="${shelf_length}" radius="${shelf_radius}"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="white"/>
+    </visual>
+  </link>
+
+  <joint name="base_to_sensors_shelf_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="sensors_shelf_link"/>
+    <origin xyz="0 0 ${shelf_zoff}"/>
+  </joint>
+
+</robot>

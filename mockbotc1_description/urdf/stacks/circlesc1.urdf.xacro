@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!-- Based on Turtlebot Create revised for Mock TurtleBot Create1 -->
+<robot name="mockbotc1_hardware" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:macro name="stack_circles" params="parent_link">
+
+    <joint name="plate_0_joint" type="fixed">
+      <origin xyz="-0.04334 0  0.06775704" rpy="0 0 0" />
+      <parent link="${parent_link}"/>
+      <child link="plate_0_link" />
+    </joint>
+
+    <link name="plate_0_link">
+      <inertial>
+        <mass value="0.01" />
+        <origin xyz="0 0 0" />
+        <inertia ixx="0.01" ixy="0.0" ixz="0.0"
+          iyy="0.01" iyz="0.0"
+          izz="0.01" />
+      </inertial>
+  
+      <visual>
+        <origin xyz=" 0 0 0 " rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://mockbotc1_description/meshes/stacks/circles/plate_0_logo.dae"/>
+        </geometry>
+      </visual>
+
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+        <geometry>
+          <box size="0.233502 0.314845 0.006401"/>
+        </geometry>
+      </collision>
+    </link>
+  
+    <joint name="plate_1_joint" type="fixed">
+      <origin xyz="0.04068 0 0.05715" rpy="0 0 0" />
+      <parent link="plate_0_link"/>
+      <child link="plate_1_link" />
+    </joint>
+
+    <link name="plate_1_link">
+      <inertial>
+        <mass value="0.1" />
+        <origin xyz="0 0 0" />
+        <inertia ixx="0.01" ixy="0.0" ixz="0.0"
+          iyy="0.01" iyz="0.0"
+          izz="0.01" />
+      </inertial>
+
+      <visual>
+        <origin xyz=" 0 0 0 " rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://mockbotc1_description/meshes/stacks/circles/plate_1_logo.dae"/>
+        </geometry>
+      </visual>
+
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+        <geometry>
+          <box size="0.314856 0.314856 0.006401"/>
+        </geometry>
+      </collision>
+    </link>
+    
+    <joint name="plate_3_joint" type="fixed">
+      <origin xyz="-0.01316 0 0.2063496" rpy="0 0 0" />
+      <parent link="plate_1_link"/>
+      <child link="plate_3_link" />
+    </joint>
+
+    <link name="plate_3_link">
+      <inertial>
+        <mass value="0.01" />
+        <origin xyz="0 0 0" />
+        <inertia ixx="0.0001" ixy="0.0" ixz="0.0"
+          iyy="0.0001" iyz="0.0"
+          izz="0.0001" />
+      </inertial>
+  
+      <visual>
+        <origin xyz=" 0 0 0 " rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://mockbotc1_description/meshes/stacks/circles/plate_2_logo.dae"/>
+        </geometry>
+      </visual>
+
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+        <geometry>
+          <box size="0.288 0.315 0.006401"/>
+        </geometry>
+      </collision>
+    </link> 
+
+  </xacro:macro>
+
+</robot>
