@@ -1,3 +1,4 @@
+# Revised and adopted by AR Lunan for the MockBOT Project Dec 2025
 # Copyright (c) 2021 Juan Miguel Jimeno
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -49,7 +50,7 @@ def generate_launch_description():
     ros_distro = EnvironmentVariable('ROS_DISTRO')
     slam_param_name = 'slam_params_file'
     if ros_distro.perform(lc) == 'foxy': 
-        slam_param_name = 'params_file'
+        slam_param_name = 'params_file' 
 
     return LaunchDescription([
         DeclareLaunchArgument(

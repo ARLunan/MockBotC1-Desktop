@@ -3,12 +3,12 @@
 <package format="3">
   <name>mockbotc1</name>
   <version>0.0.0</version>
-  <description>MockBotC1 ROS 2 Oackage</description>
+  <description>MockBotc1 ROS 2 Oackage</description>
   <maintainer email="arlunan@ieee.org">AR Lunan</maintainer>
   <license>Apache 2.0</license>
-  <url type="website">TBD</url>
-  <url type="repository">TBD</url>
-  <url type="bugtracker">TBD</url>
+  <url type="website">https://github.com/ARLunan</url>
+  <url type="repository">https://github.com/ARLunan/MockBOTc1-Desktop</url>
+  <url type="bugtracker">https://github.com/ARLunan/MockBOTc1-Desktop/issues</url>
   <buildtool_depend>ament_cmake</buildtool_depend>
   <export>
     <build_type>ament_cmake</build_type>

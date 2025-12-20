@@ -4,11 +4,11 @@
   <name>mockbotc1_navigation</name>
   <version>0.0.0</version>
     <description>MockBOTc1 Navigation Package</description>
-  <maintainer email="jimenojmm@gmail.com">Juan Miguel Jimeno</maintainer>
+  <maintainer email="arlunan@ieee.org">A R Lunan</maintainer>
   <license>Apache 2.0</license>
-  <url type="website">linorobot.org</url>
-  <url type="repository">https://github.com/linorobot/linorobot2</url>
-  <url type="bugtracker">https://github.com/linorobot/linorobot2/issues</url>
+  <url type="website">https://github.com/ARLunan</url>
+  <url type="repository">https://github.com/ARLunan/MockBOTc1-Desktop</url>
+  <url type="bugtracker">https://github.com/ARLunan/MockBOTc1-Desktop/issues</url>
   <buildtool_depend>ament_cmake</buildtool_depend>
   <exec_depend>nav2_bringup</exec_depend>
   <export>

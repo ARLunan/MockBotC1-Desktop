@@ -3,9 +3,10 @@ Panels:
     Help Height: 78
     Name: Displays
     Property Tree Widget:
-      Expanded: ~
+      Expanded:
+        - /Global Options1
       Splitter Ratio: 0.5
-    Tree Height: 907
+    Tree Height: 387
 Visualization Manager:
   Class: ""
   Displays:
@@ -49,45 +50,55 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+          Value: true
         base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        camera_link:
+        chassis_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        front_left_wheel_link:
+        front_castor_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        front_right_wheel_link:
+        left_cliff_sensor_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        left_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        imu_link:
+        leftfront_cliff_sensor_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        laser:
+        right_cliff_sensor_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
-        rear_left_wheel_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rear_right_wheel_link:
+        right_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
+        rightfront_cliff_sensor_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        wall_sensor_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Mass Properties:
+        Inertia: false
+        Mass: false
       Name: RobotModel
       TF Prefix: ""
       Update Interval: 0
@@ -95,6 +106,8 @@ Visualization Manager:
       Visual Enabled: true
     - Class: rviz_default_plugins/TF
       Enabled: true
+      Filter (blacklist): ""
+      Filter (whitelist): ""
       Frame Timeout: 15
       Frames:
         All Enabled: true
@@ -102,19 +115,23 @@ Visualization Manager:
           Value: true
         base_link:
           Value: true
-        camera_link:
+        chassis_link:
           Value: true
-        front_left_wheel_link:
+        front_castor_link:
           Value: true
-        front_right_wheel_link:
+        left_cliff_sensor_link:
           Value: true
-        imu_link:
+        left_wheel_link:
           Value: true
-        laser:
+        leftfront_cliff_sensor_link:
           Value: true
-        rear_left_wheel_link:
+        right_cliff_sensor_link:
           Value: true
-        rear_right_wheel_link:
+        right_wheel_link:
+          Value: true
+        rightfront_cliff_sensor_link:
+          Value: true
+        wall_sensor_link:
           Value: true
       Marker Scale: 0.10000000149011612
       Name: TF
@@ -122,21 +139,25 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        base_footprint:
-          base_link:
-            camera_link:
+        base_link:
+          base_footprint:
+            {}
+          chassis_link:
+            front_castor_link:
               {}
-            front_left_wheel_link:
+            left_cliff_sensor_link:
               {}
-            front_right_wheel_link:
+            left_wheel_link:
               {}
-            imu_link:
+            leftfront_cliff_sensor_link:
               {}
-            laser:
+            right_cliff_sensor_link:
               {}
-            rear_left_wheel_link:
+            right_wheel_link:
               {}
-            rear_right_wheel_link:
+            rightfront_cliff_sensor_link:
+              {}
+            wall_sensor_link:
               {}
       Update Interval: 0
       Value: true
@@ -149,7 +170,7 @@ Visualization Manager:
       Value: true
   Enabled: true
   Global Options:
-    Background Color: 238; 238; 236
+    Background Color: 119; 118; 123
     Fixed Frame: base_footprint
     Frame Rate: 30
   Name: root
@@ -183,18 +204,18 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.4653983414173126
+      Pitch: 0.27539849281311035
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.7553982138633728
+      Yaw: 0.7503982782363892
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 1136
+  Height: 623
   Hide Left Dock: false
   Hide Right Dock: false
-  QMainWindow State: 000000ff00000000fd00000001000000000000015600000416fc0200000001fb000000100044006900730070006c006100790073010000003d00000416000000c900ffffff000005f40000041600000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
-  Width: 1872
-  X: 48
-  Y: 27
+  QMainWindow State: 000000ff00000000fd00000001000000000000015600000211fc0200000001fb000000100044006900730070006c006100790073010000003f00000211000000cc00ffffff000002af0000021100000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Width: 1035
+  X: 294
+  Y: 106

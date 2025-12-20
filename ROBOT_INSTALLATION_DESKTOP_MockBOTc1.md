@@ -23,10 +23,6 @@ The MockTurtleBotC1 code supports your_ros_distro = **jazzy** currently.
     colcon build
     source install/setup.bash
 
-### 2. Download MockBotC1-Desktop and dependencies:
-
-=======
-
 ### 2. Download MockBOTc1-Desktop and dependencies:
 
 2.1.2 Install MockBOTc1-Desktop package:
