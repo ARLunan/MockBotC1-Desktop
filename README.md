@@ -9,7 +9,7 @@
 The purpose of this document is to document the development and post the release of ROS 2 Packages that migrate the original "Willow Garage" / Open Robotics Turtlebot (tm) where the last released repository was ROS Indigo, to ROS 2 Jazzy/Navigation 2 autonomous navigation'. The new repositories are called "MockBOTc1-Robot and "MockBOTc1-Desktop" uses this original iRobot Create (™) 1 Base. It should be mentioned that while this repository is written to use with a iRobot Create 1, the installed base drive package (Autonomy Labs ™) includes support for the Roomba Model 500 or 600) and Create 2 base. To enable these drivers, a manual revison must be made to the mockbotc1\_bringup launch file that is installed in the ros2\_ws workspace, and "\$ colcon build" recompiled and sourced from the workspace root,  
 \$ ros2_ws: . install/setup.bash". 
 
-To run the MockBOT_c1, the Desktop Machine and Robot Raspberry Pi, Logitech Gamepad Joystick and other devices must be powered up and connected by WiFi over the same network
+To run the MockBOT_c1, the Desktop Machine and Robot Raspberry Pi, Roomb/Create1 Base, Logitech Gamepad Joystick and other devices must be powered up and connected by WiFi over the same network
 
 From the **Desktop** Machine, open a new **Terminal Window** and connect by ssh to the Robot:  
 **\$ sudo ssh unbuntu@rp5\-ub24j\-mb.local** , using the password you assigned when installing installing Ubuntu 24.04 on the Raspberry Pi Robot. 
@@ -64,7 +64,7 @@ The Map will Vizualize (by Default) in **RViz2** on the Desktop Host Machine
 
 ### Refer to separate Manual Installation of MockBOTc1-Robot on the Raspberry Pi 5 Compute.
 
-**Installation of ROS 2 Packages and Dependancies on the Robot Desktop Computer.** This Repository material references the ROS 2 and dependencies installation documented in the linorobot2 repository *https://github.com/linorobot/linorobot2/blob/jazzy/ROBOT* , and adds instructions specfically for this MockBOTc1-Robot model.
+**Installation of ROS 2 Packages and Dependancies on the Robot Desktop Computer.** This Repository material references the ROS 2 and dependencies installation documented in the linorobot2 repository **https://github.com/linorobot/linorobot2/blob/jazzy/ROBOT** , SLGRepository **https://github.com/slgroboticshttps://github.com/slgrobotics**, and WimbleRobotics **https://github.com/wimblerobotics/Sigyn**, and adds instructions specfically for this MockBOTc1-Robot model.
 
 This "install" script on the ros2me repository script below will install  
 **ROS 2 jazzy distro** and a number of python3 libraries and dependancies for the Ubuntu 24.04 Jammy Release meta-package:

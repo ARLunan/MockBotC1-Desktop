@@ -2,8 +2,8 @@
 
 ## Refer to separate Manual Installation of MockBOTc1-Robot on Remote Desktop computer
 
-    This Repository is a varient of the Linorobot2 and slgrobitics Repositories with hardwire specific revisions to URDF applicable to the AutonomyLab Create1 Base (https://github.com/AutonomyLab/create_robot), SlamTec RPLidar, Luxonis Oak-D-Lite Camera & IMU
-    Note: This Procedure installs Desktop Joystick and  Navigation packages on the Remote Desktop Computer (Ubuntu) that does has a connected monitor for Robot, SLAM & Nav Visualization functions
+This Repository is a varient of the Linorobot2, SLGrobitics, and Wimble Robotics Repositories with hardwire specific revisions to URDF applicable to the AutonomyLab Create1 Base (https://github.com/AutonomyLab/create_robot), SlamTec RPLidar, Luxonis Oak-D-Lite Camera & IMU
+Note: This Procedure installs Desktop Navigation and Visualization packages on the Remote Desktop Computer (Ubuntu) that does has a connected monitor for Robot, SLAM & Nav Visualization functions
 
 ## Manual installation of MockTurtleBOTc1-Desktop packages on Desktop computer
 
