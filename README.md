@@ -2,7 +2,7 @@
 
 ## MockBOT TurtleTron Roomba 400 Base/Create 1 Base Project
 
-This repository for the **MockBOT** TurtleTron project defines the Jazzy branch for the **Desktop Compute** that complements the **Robot Compute** Roomba 400/Create 1 base, that is supported by several varients on the AutonomyLabs Packages repository. The **MockBOT** project is described in the book "MockBOT: Over-the-shoulder instructions on how to build your own personal robot". It can be purchased from amazon.com, amazon.ca, or in other locations, in Books dropdown, Search MockBOT, DIY robotics. Addendums to The TurtleTron specific text are also hosted in the **MockBOTc1-Docs** repository.
+This repository for the **MockBOT** TurtleTron project defines the Jazzy branch for the **Desktop Compute** that complements the **Robot Compute** Roomba 400/Create 1 base, that is supported by several varients on the AutonomyLabs Packages repository. The **MockBOT** project is described in the book "The MockBOT: Over-the-shoulder instructions on how to build your own personal robot". It can be purchased from amazon.com, amazon.ca, or in other locations, in Books dropdown, Search MockBOT, DIY robotics. Addendums to The TurtleTron specific text are also hosted in the **MockBOTc1-Docs** repository.
 
 The purpose of this document is to document the development and post the release of ROS 2 Packages that migrate the original "Willow Garage" / Open Robotics Turtlebot (tm) where the last released repository was ROS Indigo, to ROS 2 Jazzy/Navigation 2 autonomous navigation'. The new repositories are called "MockBOTc1-Robot and "MockBOTc1-Desktop" uses this original iRobot Create (™) 1 Base. It should be mentioned that while this repository is written to use with a iRobot Create 1, the installed base drive package (Autonomy Labs ™) includes support for the Roomba Model 500 or 600) and Create 2 base. To enable these drivers, a manual revison must be made to the mockbotc1\_bringup launch file that is installed in the ros2\_ws workspace, and "\$ colcon build" recompiled and sourced from the workspace root,  
 \$ ros2_ws: . install/setup.bash". 
@@ -32,7 +32,7 @@ Open another **Terminal Window** Terminal on the Desktop
 
 This will visualize the published robot URDF image with an open RVIZ2 Window on the Desktop.  
 
-####Localization, Visualization and manually Drive the Robot 
+#### Localization, Visualization and manually Drive the Robot 
 
 Open another **Terminal Window** Terminal on the Desktop and drive the Robot by Teleop.
 **\$ ros2 launch mockbotc1\_navigation slam.launch.py**
@@ -49,12 +49,12 @@ From another Desktop Terminal Window,
 Move the **Robot** around the area of navigation until suitably covered, then save the **MAP** onto a Desktop Folder, /home/ubuntu/Desktop/maps.  Be sure to use the specific your user name instead of "ubuntu"
 
 Use <map_name> = "~/Desktop/maps/mapname"  
-**\$ ros2 run nav2\_map\_server map\_saver\_cli \-f \<map_name> --ros-args -p save\_map\_timeout:=10000**  
+**\$ ros2 run nav2\_map\_server map\_saver\_cli \-f \<map_name> --ros-args -p save\_map\_timeout:=10000.0**  
   
 **Autonomous Navigation**
 
 Load the map you created and run the Navigation2 package:
-**\$ ros2 launch mockbotc1\_navigation navigation.launch.py rviz:=True map:='~/Desktop/maps/mapname.yaml**
+**\$ ros2 launch mockbotc1\_navigation navigation.launch.py rviz:=True map:='~/Desktop/maps/mapname.yaml'**
 
 The Map will Vizualize (by Default) in **RViz2** on the Desktop Host Machine  
    
