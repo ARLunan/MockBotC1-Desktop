@@ -32,7 +32,7 @@ def generate_launch_description():
     )
 
     rviz_config_path = PathJoinSubstitution(
-        [FindPackageShare('mockbotc1_navigation'), 'rviz', 'linorobot2_navigation.rviz']
+        [FindPackageShare('mockbotc1_viz'), 'rviz', 'mockbotc1_navigation.rviz']
     )
 
     default_map_path = PathJoinSubstitution(
