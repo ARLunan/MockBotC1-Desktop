@@ -21,8 +21,6 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.conditions import IfCondition
 from launch_ros.substitutions import FindPackageShare
 from launch_ros.actions import Node
-from launch.conditions import IfCondition
-
 
 MAP_NAME='turtlebot3_world' #change to the name of your own map here
 
@@ -61,7 +59,7 @@ def generate_launch_description():
             default_value=default_map_path,
             description='Navigation map path'
         ),
-
+'''
         DeclareLaunchArgument(
             name='initial_pose_x',
             default_value='0.5',
@@ -79,7 +77,7 @@ def generate_launch_description():
             default_value='0.0',
             description='Initial robot yaw'
         ),
-
+'''
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(nav2_launch_path),
             launch_arguments={
