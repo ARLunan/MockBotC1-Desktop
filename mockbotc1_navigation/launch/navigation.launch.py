@@ -68,9 +68,9 @@ def generate_launch_description():
                 'map': LaunchConfiguration("map"),
                 'use_sim_time': LaunchConfiguration("sim"),
                 'params_file': nav2_config_path,
-                'initial_pose_x': LaunchConfiguration('initial_pose_x'),
-                'initial_pose_y': LaunchConfiguration('initial_pose_y'),
-                'initial_pose_yaw': LaunchConfiguration('initial_pose_yaw')
+                #'initial_pose_x': LaunchConfiguration('initial_pose_x'),
+                #'initial_pose_y': LaunchConfiguration('initial_pose_y'),
+                #'initial_pose_yaw': LaunchConfiguration('initial_pose_yaw')
             }.items()
         ),
 
