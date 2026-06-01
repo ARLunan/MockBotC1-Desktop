@@ -1,4 +1,4 @@
-# Launch Commands (using nav2_brinup directly)
+### Launch Commands (using nav2_bringup directly)
 
 # Terminal 1 — already running: robot base + ekf_node
 
