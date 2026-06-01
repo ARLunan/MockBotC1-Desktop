@@ -30,7 +30,7 @@ def generate_launch_description():
         'params_file',
         default_value=os.path.join(
             get_package_share_directory('mockbotc1_navigation'),
-            'config', 'nav2_params.yaml'),
+            'config', 'nav2_params-claudetrial.yaml'),
         description='Full path to the Nav2 params file')
 
     # ── Map Server ──────────────────────────────────────────────
