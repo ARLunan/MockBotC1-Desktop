@@ -1,4 +1,4 @@
-# Revised and adpted by ARLunan April 2026 for use in MockBOTc1-Desktop
+# Revised and adapted by ARLunan April 2026 for use in MockBOTc1-Desktop
 # Copyright (c) 2021 Juan Miguel Jimeno
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
