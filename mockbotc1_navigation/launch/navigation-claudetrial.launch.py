@@ -22,14 +22,14 @@ def generate_launch_description():
     declare_map_cmd = DeclareLaunchArgument(
         'map',
         default_value=os.path.join(
-            get_package_share_directory('your_robot_bringup'),
+            get_package_share_directory('mockbotc1_navigation'),
             'maps', 'map.yaml'),
         description='Full path to the map yaml file')
 
     declare_params_cmd = DeclareLaunchArgument(
         'params_file',
         default_value=os.path.join(
-            get_package_share_directory('your_robot_bringup'),
+            get_package_share_directory('mockbotc1_navigation'),
             'config', 'nav2_params.yaml'),
         description='Full path to the Nav2 params file')
 

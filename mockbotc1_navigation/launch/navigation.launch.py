@@ -38,7 +38,7 @@ def generate_launch_description():
     )
 
     nav2_config_path = PathJoinSubstitution(
-        [FindPackageShare('mockbotc1_navigation'), 'config', 'navigation.yaml']
+        [FindPackageShare('mockbotc1_navigation'), 'config', 'nav2_params.yaml']
     )
 
     return LaunchDescription([
